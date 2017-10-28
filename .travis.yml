@@ -9,6 +9,6 @@ script:
   - echo 'oh la lah' # being playful
   - npm run-script example-server &  # Run the server and put into background
   - sleep 10  # wait for server to initialize
-  - nc -zv localhost 3868 && echo "Server works. Success"
+  - nc -zv localhost 3869 && echo "Server works. Success"
 after_script:
   - codeclimate-test-reporter < coverage/lcov.info
